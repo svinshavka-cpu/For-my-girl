@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>For my love</title>
+        <link rel="stylesheet" href="anya-style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="tsvetatki.png" alt="flowers" class="topimg">
+                <div class="header-text">
+                    <h1 class="header-text-h1">Аня</h1>
+                    <p class="header-text-p"> моя самая любимая девочка на свети спасибо что ты рядом и что ты уменя есть </p>   
+                </div>
+                <img src="tsvetatki.png" alt="flowers" class="topimg2">
+            </div>
+
+        </header>
+         <main>
+
+                <div class="Gridtempalte">
+                    <div class="item" style="grid-area: box-1"><img src="grey buda.png" alt="grey buda"></div>
+                    <div class="item" style="grid-area: box-2"><img src="grey flower.png" alt="grey flower"></div>
+                    <div class="item" style="grid-area: box-3"><img src="grey jewelery.png" alt="grey jewelery"></div>
+                    <div class="item" style="grid-area: box-4"><img src="pink girl.png" alt="pink girl"></div>
+                    <div class="item" style="grid-area: box-5"><img src="me and her pink.png" alt="me and her"></div>
+                    <div class="item" style="grid-area: box-6"><img src="pink liter.png" alt="lighter"></div>
+                </div>
+
+         </main>
+
+         <footer>
+            <hr class="botom-divider">
+            <img src="Screenshot 2026-11-25 173437.png" alt="love" class="lovee">
+            <p class="love-p">аничка этот сайт я зделал для тебя ) надеюсь он тебе понравилася, знвешь я тебя очень сильно люблю и дорожу каждым моментом стобой моя звйка хорошая правда ты самай любимый иважный человек в моей жизнь я тебя очень сильно люблюи горжусь тобой я очень хочу провезти стобой жизьнь и быть тем самым самым близким для тебя человеком ты моя любовь и все то что я только мог просить спаиьо что ты есть я всегда буду стобой </p>
+                
+         </footer>
+
+         <script>
+            const loveImage = document.querySelector(".lovee");
+
+            if (loveImage && "IntersectionObserver" in window) {
+                loveImage.classList.add("reveal-on-scroll");
+
+                const loveImageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.05 });
+
+                loveImageObserver.observe(loveImage);
+            }
+         </script>
+
+    </body>
